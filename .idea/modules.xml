@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/shareall.iml" filepath="$PROJECT_DIR$/shareall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shareutils/shareutils.iml" filepath="$PROJECT_DIR$/shareutils/shareutils.iml" />
     </modules>
   </component>
 </project>
