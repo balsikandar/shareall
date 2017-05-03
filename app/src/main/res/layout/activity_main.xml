@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="camera.touchtalent.com.shareall.MainActivity">
 
+    <Button
+        android:id="@+id/pickFile"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="@string/pickFile"
+        android:layout_above="@+id/displayText"
+        android:textAllCaps="false"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"/>
+
     <TextView
+        android:id="@+id/displayText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/clickButton"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/shareFile"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/displayText"
+        android:text="@string/shareFile"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:textStyle="italic"/>
+
+</RelativeLayout>
